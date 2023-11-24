@@ -104,7 +104,10 @@
 	 * @param  {Function} callback
 	 */
 	function onStarted(context, callback){
-
+		if (context.resume){
+			context.resume()
+		}
+		
 		function checkLoop(){
 			if (isStarted(context)){
 				callback()
