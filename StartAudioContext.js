@@ -110,9 +110,6 @@
 				callback()
 			} else {
 				requestAnimationFrame(checkLoop)
-				if (context.resume){
-					context.resume()
-				}
 			}
 		}
 
